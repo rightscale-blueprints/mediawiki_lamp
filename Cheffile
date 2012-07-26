@@ -3,6 +3,11 @@
 
 site 'http://community.opscode.com/api/v1'
 
+cookbook 'rs_utils',
+   :git => 'https://github.com/flaccid/cookbooks_public',
+   :path => 'cookbooks/rs_utils',
+   :ref => 'master'
+
 cookbook 'apache2',
    :git => 'https://github.com/flaccid/cookbooks',
    :path => 'cookbooks/apache2',
@@ -26,4 +31,9 @@ cookbook 'database',
 cookbook 'mediawiki_application',
    :git => 'https://github.com/flaccid/cookbooks',
    :path => 'cookbooks/mediawiki_application',
+   :ref => 'master'
+
+cookbook 'mediawiki_rightscale',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/mediawiki_rightscale',
    :ref => 'master'
