@@ -99,6 +99,15 @@ GIT
 
 GIT
   remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/mediawiki_rightscale
+  ref: master
+  sha: 216a9f371f734761967cb6810afa074cdb81f9e6
+  specs:
+    mediawiki_rightscale (0.0.1)
+      mediawiki_application (>= 0.0.0)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
   path: cookbooks/mysql
   ref: master
   sha: 216a9f371f734761967cb6810afa074cdb81f9e6
@@ -106,10 +115,20 @@ GIT
     mysql (1.2.7)
       openssl (>= 0.0.0)
 
+GIT
+  remote: https://github.com/flaccid/cookbooks_public
+  path: cookbooks/rs_utils
+  ref: master
+  sha: e9ca703b6dae8204f6e1ce42dedd31f20d2f8810
+  specs:
+    rs_utils (0.0.1)
+
 DEPENDENCIES
   apache2 (>= 0)
   application_php (>= 0)
   database (>= 0)
   mediawiki_application (>= 0)
+  mediawiki_rightscale (>= 0)
   mysql (>= 0)
+  rs_utils (>= 0)
 
