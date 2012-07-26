@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'rs_utils',
+   :git => 'https://github.com/flaccid/cookbooks_public',
+   :path => 'cookbooks/rs_utils',
+   :ref => 'master'
+
+cookbook 'apache2',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/apache2',
+   :ref => 'master'
+
+cookbook 'mysql',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/mysql',
+   :ref => 'master'
+   
+cookbook 'application_php',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/application_php',
+   :ref => 'master'
+      
+cookbook 'database',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/database',
+   :ref => 'master'
+
+cookbook 'mediawiki_application',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/mediawiki_application',
+   :ref => 'master'
+
+cookbook 'mediawiki_rightscale',
+   :git => 'https://github.com/flaccid/cookbooks',
+   :path => 'cookbooks/mediawiki_rightscale',
+   :ref => 'master'
