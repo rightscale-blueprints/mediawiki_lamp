@@ -13,9 +13,6 @@
     }
   },
   "mysql": {
-    "tunable": {
-      "innodb_flush_method":"O_DSYNC"
-    },
     "server_root_password": "donotusethisinproduction,changeme",
     "server_repl_password": "donotusethisinproduction,changeme",
     "server_debian_password": "donotusethisinproduction,changeme"
